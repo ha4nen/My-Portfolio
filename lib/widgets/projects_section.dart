@@ -16,20 +16,8 @@ class _ProjectsSectionState extends State<ProjectsSection> {
   final List<String> filters = ['All', 'Website', 'Mobile App', 'Design', 'Games'];
   
   final List<Map<String, dynamic>> projects = [
-    {
-      'title': 'Cross-Platform Projects with .NET MAUI',
-      'description': 'Developed multiple cross-platform projects using .NET MAUI (XAML and C#). Focused on responsive UI, MVVM, and native integrations.',
-      'technologies': ['.NET MAUI', 'XAML', 'C#'],
-      'isFeatured': true,
-      'category': 'Mobile App',
-    },
-    {
-      'title': 'Bank Mobile Application Interface',
-      'description': 'Designed a simple, user-centered interface for a bank mobile application based on needs analysis and UX best practices.',
-      'technologies': ['Figma', '.NET MAUI'],
-      'isFeatured': false,
-      'category': 'Design',
-    },
+    
+      
     {
       'title': 'Outfitly – AI-Powered Wardrobe & Outfit Planner',
       'description': 'Outfitly is a smart mobile application that helps users digitize their wardrobe, plan outfits, and receive AI-powered style recommendations. By uploading and categorizing clothing items, users can build a virtual closet that suggests outfit combinations tailored to the weather, occasion, and personal style preferences. The app also includes a calendar-based outfit planner for scheduling looks in advance, and a social feed where users can share outfits and get inspired by others.\n\nTo support these features, I developed a Flutter frontend, a Django REST backend, and integrated TensorFlow Lite for on-device outfit recommendation. The project followed a structured Software Requirements Specification (SRS) and was validated through functionality, usability, and performance testing to ensure a reliable and user-friendly experience.',
@@ -105,21 +93,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
         'assets/NutriTrack/Screenshot 2024-01-09 144322.png',
       ],
     },
-    {
-      'title': 'Hotel Management System',
-      'description': 'Relational MySQL database with ERD/EERD diagrams, triggers, joins, data integrity constraints, and complex SQL queries to manage hotels, guests, rooms, reservations, and payments.',
-      'technologies': ['MySQL', 'Database Design', 'SQL', 'ERD'],
-      'isFeatured': false,
-      'category': 'Design',
-    },
-    {
-      'title': 'Unity 3D Horror Game',
-      'description': '3D horror game in C# where players navigate a dark forest and haunted houses, collecting pickups while avoiding a pursuing enemy. Features enemy AI with NavMesh and immersive effects.',
-      'technologies': ['Unity', 'C#', 'Game Development', 'AI'],
-      'isFeatured': false,
-      'category': 'Games',
-    },
-    {
+     {
       'title': 'Instagram Clone – Social Media Mobile App',
       'description': 'Instagram Clone is a mobile application designed to replicate the core features of Instagram, allowing users to share images, connect with others, and engage in a social environment. The app enables users to sign up, log in, upload posts, like and comment on others\' content, and explore a dynamic feed that updates in real time.\n\nThe project focused on creating an interactive and user-friendly experience with personalized profiles, authentication for secure access, and smooth image handling through cloud storage. It provided me the opportunity to work with modern cross-platform tools and real-time databases to deliver a responsive and scalable social media app.',
       'technologies': ['Flutter', 'Firebase Authentication', 'Firebase Firestore', 'Firebase Storage', 'Provider'],
@@ -143,12 +117,71 @@ class _ProjectsSectionState extends State<ProjectsSection> {
         'assets/Instagram/13.png',
       ],
     },
+  
+     {
+       'title': 'Horror House  – Unity Horror Game ',
+       'description': 'Horror House is a thrilling and immersive game developed in Unity where players navigate a dark, eerie forest and explore two haunted houses. The main objective is to collect all pickups in the first house to unlock the second one, all while being chased by a relentless enemy. If the enemy tags the player, the game is lost. Successfully exploring both houses and collecting all items leads to victory.\n\nThe game features a suspenseful atmosphere created with dim lighting, ambient audio, and challenging gameplay. Players can choose from three difficulty levels (Easy, Medium, Hard), with enemy speed and behavior adjusting accordingly. A main menu was designed with options to play, view instructions, adjust settings, mute/unmute sound, and quit the game.',
+       'technologies': ['Unity', 'C# (game logic, UI, and enemy AI)', 'NavMesh (pathfinding)', 'Audio Mixer', '2D Assets & Sprites', 'Version Control'],
+       'isFeatured': false,
+       'category': 'Games',
+       'coverImage': 'assets/HorrorGame/1.png',
+       'localImages': [
+         'assets/HorrorGame/1.png',
+         'assets/HorrorGame/2.png',
+         'assets/HorrorGame/3.png',
+         'assets/HorrorGame/4.png',
+         'assets/HorrorGame/5.png',
+       ],
+       'videoDemo': 'assets/videos/horror_game_demo.mp4',
+     },
+
     {
-      'title': 'Guessing Game',
-      'description': 'Developed a console-based guessing game using C++ where players guess numbers or letters with varying difficulty levels. Implemented feedback for guesses, high-score tracking, and a menu-driven interface.',
-      'technologies': ['C++', 'Console Application', 'Game Development'],
+      'title': 'Guessing Game – Console-Based C++ Project',
+      'description': 'The Guessing Game is a console-based application developed in C++ as part of the Object-Oriented Programming II course project. The program challenges players to guess either a randomly generated number or a hidden alphabet character within a limited number of attempts. Difficulty levels (Easy, Medium, Hard) adjust the range and number of tries, while feedback guides the player by indicating if a guess is higher or lower than the target.\n\nThe game includes additional features such as high score tracking, where the fewest attempts are recorded, and a credits section displaying project contributors. Built with an emphasis on object-oriented programming principles (functions, modular structure, and randomization), the project demonstrates practical use of C++ for interactive applications.',
+      'technologies': ['C++', 'OOP principles', 'Standard Library (iostream, cstdlib, ctime)'],
       'isFeatured': false,
       'category': 'Games',
+      'coverImage': 'assets/GuessingGame/1.png',
+      'githubUrl': 'https://github.com/ha4nen/Guessing_Game',
+      'localImages': [
+        'assets/GuessingGame/1.png',
+        'assets/GuessingGame/2.png',
+        'assets/GuessingGame/3.png',
+        'assets/GuessingGame/4.png',
+        'assets/GuessingGame/5.png',
+        'assets/GuessingGame/6.png',
+        'assets/GuessingGame/7.png',
+        'assets/GuessingGame/8.png',
+        'assets/GuessingGame/9.png',
+        'assets/GuessingGame/10.png',
+        'assets/GuessingGame/11.png',
+        'assets/GuessingGame/12.png',
+      ],
+    },
+    {
+      'title': 'Cross-Platform Projects with .NET MAUI',
+      'description': 'Developed multiple cross-platform projects using .NET MAUI (XAML and C#). Focused on responsive UI, MVVM, and native integrations.',
+      'technologies': ['.NET MAUI', 'XAML', 'C#'],
+      'isFeatured': false,
+      'category': 'Mobile App',
+    },
+    {
+        'title': 'UNITY Bank Application – UI/UX Design Project',
+        'description': 'UNITY Bank Application was designed as a mobile banking prototype focused on improving user experience, usability, and accessibility. The project aimed to understand real user needs in banking apps and create an interface that simplifies essential tasks like checking balances, transferring money, paying bills, and managing accounts.\n\nThe design process included interviews, questionnaires, and user observations to gather insights into user behavior and preferences. Based on these findings, we created wireframes, prototypes, and iteratively refined the design with user feedback. Usability testing helped identify issues with navigation, consistency, and clarity, leading to a more intuitive and user-friendly design.\n\nThe final prototype featured secure login, clear dashboards, simplified transfer and payment flows, receipt management, and structured navigation. By focusing on accessibility and ease of use, the project highlighted how user-centered design can improve trust and satisfaction in digital banking experiences.',
+        'technologies': ['Figma (wireframing & prototyping)', 'Survey tools', 'Observation methods', 'User testing'],
+        'isFeatured': false,
+        'category': 'Design',
+        'githubUrl': 'https://github.com/ha4nen/Demo-Bank',
+        'visitUrl': 'https://nouhad122.github.io/Demo-Bank/login.html',
+        'hideGallery': true,
+        'coverImage': 'assets/Bank/Screenshot 2025-09-15 235758.png',
+      },
+      {
+      'title': 'Hotel Management System',
+      'description': 'Relational MySQL database with ERD/EERD diagrams, triggers, joins, data integrity constraints, and complex SQL queries to manage hotels, guests, rooms, reservations, and payments.',
+      'technologies': ['MySQL', 'Database Design', 'SQL', 'ERD'],
+      'isFeatured': false,
+      'category': 'Design',
     },
   ];
   
@@ -256,6 +289,9 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                   isFeatured: project['isFeatured'],
                   githubUrl: project['githubUrl'],
                   backendUrl: project['backendUrl'],
+                  visitUrl: project['visitUrl'],
+                  hideGallery: project['hideGallery'] ?? false,
+                  videoDemo: project['videoDemo'],
                   coverImage: project['coverImage'],
                   localImages: List<String>.from(project['localImages'] ?? []),
                 ).animate().fadeIn(delay: (400 + index * 100).ms, duration: 800.ms);
@@ -276,6 +312,9 @@ class _ProjectsSectionState extends State<ProjectsSection> {
     required bool isFeatured,
     String? githubUrl,
     String? backendUrl,
+    String? visitUrl,
+    bool hideGallery = false,
+    String? videoDemo,
     String? coverImage,
     List<String> localImages = const [],
   }) {
@@ -436,10 +475,11 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                             description: description,
                             technologies: technologies,
                             imageUrls: const [],
-                            localImagePaths: localImages,
+                            localImagePaths: hideGallery ? [] : localImages,
                             githubUrl: githubUrl,
                             backendUrl: backendUrl,
-                            visitUrl: null,
+                            visitUrl: visitUrl,
+                            videoDemo: videoDemo,
                           ),
                         ),
                       );

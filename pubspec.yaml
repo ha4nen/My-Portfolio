@@ -38,6 +38,7 @@ dependencies:
   url_launcher: ^6.2.5
   flutter_animate: ^4.5.0
   universal_html: ^2.2.4
+  video_player: ^2.8.1
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +68,10 @@ flutter:
     - assets/NutriTrack/
     - assets/Instagram/
     - assets/Outfitly/
+    - assets/Bank/
+    - assets/HorrorGame/
+    - assets/GuessingGame/
+    - assets/videos/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
